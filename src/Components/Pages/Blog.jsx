@@ -20,15 +20,15 @@ const Blog = () => {
                 <div>
                     <h1 className="text-center mt-4 text-4xl font-bold">
                         Frequently Asked Questions
-                        </h1>
-                        <hr className="mt-4" />
+                    </h1>
+                    <hr className="mt-4" />
                     <div className="divide-y w-3/4 mx-auto divide-gray-200 mt-10 rounded-xl border border-gray-200 bg-white">
                         <details className="group p-6">
                             <summary className="flex cursor-pointer items-center justify-between">
                                 <h2 className="text-lg font-medium text-gray-900">
                                     Difference between SQL and NoSQL?
                                 </h2>
-123
+
                                 <span className="relative ml-1.5 h-5 w-5 flex-shrink-0">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
