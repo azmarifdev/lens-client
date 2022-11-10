@@ -44,7 +44,7 @@ const ReviewUpdate = () => {
                 }
             })
             .catch((err) => {
-                toast.error(err.message);
+                toast.error("Review not update");
             });
     };
     return (
