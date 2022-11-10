@@ -28,7 +28,7 @@ const Blog = () => {
                                 <h2 className="text-lg font-medium text-gray-900">
                                     Difference between SQL and NoSQL?
                                 </h2>
-1
+12
                                 <span className="relative ml-1.5 h-5 w-5 flex-shrink-0">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
