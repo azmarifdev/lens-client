@@ -60,7 +60,7 @@ const Home = () => {
                                         </p>
                                     </div>
                                     <div className="md:mt-12 mt-20">
-                                        <button className="text-base font-semibold leading-4 text-indigo-700 bg-white hover:bg-gray-200 sm:w-auto w-full rounded p-4 focus:outline-none ">
+                                        <button className="text-base font-semibold leading-4 text-indigo-700 bg-white hover:bg-gray-200 sm:w-auto mx-auto w-full rounded p-4 focus:outline-none ">
                                             Hire me
                                         </button>
                                     </div>
