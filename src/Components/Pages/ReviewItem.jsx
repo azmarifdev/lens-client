@@ -53,7 +53,7 @@ const ReviewItem = ({ review, handleDelete }) => {
                 <p>
                     {review?.reviewText
                         ? review.reviewText.slice(0, 100) + '...'
-                        : 'no review'}
+                        : 'No Review'}
                 </p>
             </div>
         </div>
