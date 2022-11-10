@@ -23,7 +23,6 @@ const AddServices = () => {
         })
             .then((res) => res.json())
             .then((data) => {
-                // console.log(data);
                 if (data.success) {
                     form.reset();
                     toast.success('Service Added Successfully');
