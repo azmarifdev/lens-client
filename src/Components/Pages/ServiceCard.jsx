@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
-const ServiceCard = ({service}) => {
+const ServiceCard = ({ service }) => {
     return (
         <div className="p-4 md:w-1/3">
             <div className="h-full border-2 bg-gray-100 border-gray-300 border-opacity-60 rounded-lg overflow-hidden">

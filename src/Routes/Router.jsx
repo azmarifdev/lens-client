@@ -16,7 +16,7 @@ const Router = createBrowserRouter([
     {
         path: '/',
         element: <Main />,
-        errorElement: <ErrorPage/>,
+        errorElement: <ErrorPage />,
         children: [
             {
                 path: '/',
@@ -42,7 +42,7 @@ const Router = createBrowserRouter([
                 path: '/blog',
                 element: <Blog />,
             },
-            { 
+            {
                 path: '/login',
                 element: <Login />,
             },
@@ -62,7 +62,9 @@ const Router = createBrowserRouter([
                 path: '/servicedetails/:id',
                 element: <ServiceDetails />,
                 loader: ({ params }) =>
-                    fetch(`https://lens-server.vercel.app/services/${params.id}`),
+                    fetch(
+                        `https://lens-server.vercel.app/services/${params.id}`,
+                    ),
             },
         ],
     },

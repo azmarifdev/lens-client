@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ServiceDetailsCard = ({review}) => {
+const ServiceDetailsCard = ({ review }) => {
     return (
         <div className="container flex flex-col shadow-xl w-full max-w-lg p-6 mx-auto divide-y border-2 bg-gray-100 border-gray-300 border-opacity-60 rounded-lg overflow-hidden">
             <div className="flex justify-between p-4">
