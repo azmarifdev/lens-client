@@ -21,7 +21,7 @@ const Blog = () => {
                     <h1 className="text-center mt-4 text-4xl font-bold">
                         Frequently Asked Questions
                         </h1>
-                        <hr />
+                        <hr className="mt-4" />
                     <div className="divide-y w-3/4 mx-auto divide-gray-200 mt-10 rounded-xl border border-gray-200 bg-white">
                         <details className="group p-6">
                             <summary className="flex cursor-pointer items-center justify-between">
