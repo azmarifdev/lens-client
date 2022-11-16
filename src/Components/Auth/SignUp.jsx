@@ -59,19 +59,56 @@ const SignUp = () => {
     const handleGoogleLogin = () => {
         handleGoogle()
             .then((result) => {
-                toast.success('successfully Sign Up');
-                navigate(from, { replace: true });
+                toast.success('successfully login');
+                const currentUser = {
+                    email: result.user.email,
+                };
+                fetch('https://lens-server.vercel.app/jwt', {
+                    method: 'POST',
+                    headers: {
+                        'content-type': 'application/json',
+                    },
+                    body: JSON.stringify(currentUser),
+                })
+                    .then((res) => res.json())
+                    .then((data) => {
+                        // console.log(data);
+                        localStorage.setItem('token', data.token);
+                        navigate(from, { replace: true });
+                    });
             })
-            .catch((error) => console.error(error));
+            .catch((error) => {
+                const errorMessage = error.message;
+                toast.error(errorMessage.slice(22, 36));
+                setError(errorMessage.slice(22, 36));
+            });
     };
     const handleGitHubLogin = () => {
         handleGitHub()
             .then((result) => {
-                // console.log(result.user);
-                toast.success('Successfully Sign Up');
-                navigate(from, { replace: true });
+                toast.success('successfully login');
+                const currentUser = {
+                    email: result.user.email,
+                };
+                fetch('https://lens-server.vercel.app/jwt', {
+                    method: 'POST',
+                    headers: {
+                        'content-type': 'application/json',
+                    },
+                    body: JSON.stringify(currentUser),
+                })
+                    .then((res) => res.json())
+                    .then((data) => {
+                        // console.log(data);
+                        localStorage.setItem('token', data.token);
+                        navigate(from, { replace: true });
+                    });
             })
-            .catch((error) => console.error(error));
+            .catch((error) => {
+                const errorMessage = error.message;
+                toast.error(errorMessage.slice(22, 36));
+                setError(errorMessage.slice(22, 36));
+            });
     };
     const [spinner, setSpinner] = useState(false);
 
@@ -186,7 +223,7 @@ const SignUp = () => {
                     <div className="flex items-center justify-center mt-6">
                         <Link
                             to="/login"
-                            className="inline-flex items-center font-thin text-center text-gray-500 hover:text-gray-700 dark:text-gray-100 dark:hover:text-white">
+                            className="inline-flex items-center font-thin text-center text-white">
                             <span className="ml-2">
                                 You have already an account? Login
                             </span>
