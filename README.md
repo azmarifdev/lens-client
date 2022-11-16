@@ -7,9 +7,6 @@
 - [Client site GitHub Link](https://github.com/Porgramming-Hero-web-course/b6a11-service-review-client-side-azmarifcode)
 - [Server site GitHub Link](https://github.com/azmarifcode/lens-server)
 
-## Note: 
-আমার windows 7 & node js version - 14। তাই vercel এর কিছু প্রবলেম থাকায় মাহবুব সাকি ভাই আর জাকারিয়া ভাইয়ের কথা অনুযায়ী সার্ভার সাইট আমার পাবলিক রিপোতে ডিপলই করেছি। আর ক্লাইন্ট সাইট টা প্রাইভেটই আছে।
-ধন্যবাদ।
 
 ## Website Details
 - Birthday Photography
